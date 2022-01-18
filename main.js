@@ -1,5 +1,5 @@
 //class to store characters of morse code translator
-// let input = document.getElementById("input").innerHTML;
+let input = document.getElementById("input").innerHTML;
 
 class Morse {
     constructor(character) {
@@ -34,17 +34,64 @@ class Morse {
 
     findCharacter() {
         switch(this.character){
-            case ".-":
+            case this.A:
                 return "A";
-                break;
-            case "-...":
+            case this.B:
                 return "B";
-        
+            case this.C:
+                return "C";
+            case this.D:
+                return "D";
+            case this.E:
+                return "E";
+            case this.F:
+                return "F";
+            case this.G:
+                return "G";
+            case this.H:
+                return "H";
+            case this.I:
+                return "I";
+            case this.J:
+                return "J";
+            case this.K:
+                return "K";
+            case this.L:
+                return "L";
+            case this.M:
+                return "M";
+            case this.N:
+                return "N";
+            case this.O:
+                return "O";
+            case this.P:
+                return "P";
+            case this.Q:
+                return "Q";
+            case this.R:
+                return "R";
+            case this.S:
+                return "S";
+            case this.T:
+                return "T";
+            case this.U:
+                return "U";
+            case this.V:
+                return "V";
+            case this.W:
+                return "W";
+            case this.X:
+                return "X";
+            case this.Y:
+                return "Y";
+            case this.Z:
+                return "Z";
         }
     }
+
 }
 
-const translator = new Morse("-...");
+const translator = new Morse(input);
 
 console.log(translator.findCharacter())
 
